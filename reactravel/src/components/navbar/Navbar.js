@@ -9,8 +9,12 @@ import './NavbarStyles.css'
 
 function NavBar()
 {
+
+    const[nav, setNav] = useState(false);
+    const handleNavClick = () => setNav(!nav)
+
     return(
-    <div className='navbar'>
+    <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
     
         <div className="logo">
             <h2>REACTRAVEL</h2>
@@ -23,14 +27,14 @@ function NavBar()
             <li>Views</li>
         </ul>
         <div className="nav-menu-icons">
-            <BiSearch className='menu-icon' />'
+            <BiSearch className='menu-icon' style={{marginRight: '1rem'}}/>'
             <BsPerson className='menu-icon' />'
         </div>
-        <div className="full-menu">
+        <div className="full-menu" onClick={handleNavClick}>
             <HiOutlineMenuAlt4 className='menu-icon' />
         </div>
 
-        <div className="mobile-menu">
+        <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
             <ul className="mobile-navbar">
                 <li>Home</li>
                 <li>Destinations</li>
