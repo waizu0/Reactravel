@@ -62,6 +62,13 @@
     flex-direction: column;
 }
 
+select, input{
+    background-color: #dddddd;
+    border: 0px;
+    padding: 2px;
+}
+
+
 .input-wrap {
     margin: .4rem;
     display: flex;
