@@ -6,7 +6,6 @@ import Cancun from '../../assets/cancun.jpg'
 import Hawaii from '../../assets/Hawaii.jpg'
 import Rio from '../../assets/rio.jpg'
 import Thailand from '../../assets/thailand.jpg'
-import KeyWest from '../../assets/keywest.jpg'
 
 
 function Destinations() {
